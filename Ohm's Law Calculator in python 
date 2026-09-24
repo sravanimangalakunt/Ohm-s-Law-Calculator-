@@ -1,0 +1,33 @@
+Ohm's Law Calculator
+
+Formula: V = I × R
+
+print("Ohm's Law Calculator")
+print("--------------------")
+
+print("1. Calculate Voltage")
+print("2. Calculate Current")
+print("3. Calculate Resistance")
+
+choice = int(input("Enter your choice: "))
+
+if choice == 1:
+current = float(input("Enter Current (A): "))
+resistance = float(input("Enter Resistance (Ω): "))
+voltage = current * resistance
+print("Voltage =", voltage, "V")
+
+elif choice == 2:
+voltage = float(input("Enter Voltage (V): "))
+resistance = float(input("Enter Resistance (Ω): "))
+current = voltage / resistance
+print("Current =", current, "A")
+
+elif choice == 3:
+voltage = float(input("Enter Voltage (V): "))
+current = float(input("Enter Current (A): "))
+resistance = voltage / current
+print("Resistance =", resistance, "Ω")
+
+else:
+print("Invalid choice!")
